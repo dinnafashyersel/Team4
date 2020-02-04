@@ -1,0 +1,89 @@
+div.wpcf7-response-output,
+div.wpcf7-validation-errors {
+	margin: 1em 0 0 !important;
+	position: relative;
+	z-index: 8;
+}
+
+.wpcf7-not-valid {
+	&, input& {
+		border-color: #D94729;
+	}
+}
+
+.wpcf7-not-valid-tip {
+	display: none !important;
+}
+
+div.wpcf7 {
+	.wpcf7-form {
+		display: block;
+		margin: 0;
+
+		.wpcf7-submit {
+			margin-top: 0;
+			.submit-button-style
+		}
+	}
+}
+
+.email-offers {
+	margin-bottom: 8px;
+	display: block;
+}
+
+.wpcf7-file {
+	background: #fff;
+	padding: 10px;
+	border: 1px solid @default-line-color;
+	margin: 0 0 20px 0;
+	font-size: 14px;
+	-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1) !important;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1) !important;
+}
+
+.vamtam-rsvp-form {
+	label {
+		font-size: 13px;
+		color: @accent-color-2;
+	}
+
+	input[type="text"],
+	input[type="number"],
+	select {
+		font-size: 20px;
+		padding: 17px;
+		background: @accent-color-8 !important;
+		color: @accent-color-1;
+	}
+
+	select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+
+	.wpcf7-form-control-wrap.dropdown {
+		position: relative;
+		display: block;
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 24px;
+			right: 18px;
+			border: 5px solid transparent;
+			border-top-color: @accent-color-2;
+			pointer-events: none;
+		}
+	}
+
+	.wpcf7-form-control-wrap.your-name {
+		width: 100%;
+	}
+
+	.ajax-loader {
+		display: none;
+	}
+}

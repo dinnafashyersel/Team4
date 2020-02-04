@@ -1,0 +1,1 @@
+<span class="shortcode-tooltip"><?php echo do_shortcode( $content ) // xss ok ?><span class="tooltip"><?php echo $tooltip_content // xss ok ?><span class="tooltip-arrow"></span></span></span>

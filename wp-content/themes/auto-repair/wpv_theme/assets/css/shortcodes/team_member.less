@@ -1,0 +1,147 @@
+.team-member-row {
+	position: relative;
+	z-index: 60;
+
+	> div { // columns
+		position: static;
+	}
+}
+
+/* Force floats adjustment */
+@media all and (-webkit-min-device-pixel-ratio: 0) {
+	.team-member-row {
+		display: inline-table;
+		width: 100%;
+		table-layout: fixed;
+	}
+}
+
+.team-member {
+	text-align: left;
+
+	.thumbnail {
+		overflow: hidden;
+		background: @accent-color-1;
+		position: relative;
+	}
+
+	img {
+		-webkit-backface-visibility: hidden;
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+		.transform( translate3d(0,0,300px) )
+	}
+
+	&:hover {
+
+		img {
+			opacity: 0.7;
+			.transform( scale(1.15) );
+		}
+
+		.share-icons {
+			.transform( translate3d(0,0,0) );
+		}
+	}
+
+	.sep-text {
+		margin: 0 0 20px 0;
+
+	}
+
+	.team-member-info {
+		margin-top: 5px;
+		padding: 5px 0 0;
+		background: transparent;
+
+		h3 {
+			margin-top: 5px;
+			margin-bottom: 0;
+			font-style: normal;
+			font-size: 23px;
+
+			a {
+			font-size: 18px;
+			font-style: normal;
+			color: @h3-color;
+			font-weight: normal;
+			}
+		}
+
+		h5 {
+			margin-top: 0;
+			font-weight: bold;
+			border-bottom: 1px solid @default-line-color;
+			padding-bottom: 15px;
+			margin-bottom: 15px;
+			color: @accent-color-4;
+			font-weight: normal;
+			margin-top: 5px;
+		}
+
+		a[href^="mailto:"] {
+			word-wrap: break-word;
+		}
+	}
+
+	.team-member-position {
+		text-transform: uppercase;
+		font-size: 11px;
+
+	}
+
+    .team-member-phone{
+    	padding-bottom: 10px;
+
+    }
+
+	.description {
+		padding: 0 20px;
+	}
+
+	.share-icons {
+		margin-top: 10px;
+		white-space: nowrap;
+		position: absolute;
+		left: 0;
+		width: auto;
+		top: auto;
+		bottom: -1px;
+		padding: 0.8em;
+		height: auto;
+		background: @accent-color-8;
+		-webkit-transition: -webkit-transform 0.35s;
+		transition: transform 0.35s;
+		.transform( translate3d( 0, 100%, 0 ) );
+
+		html.touch & {
+			.transform( translate3d( 0, 0, 0 ) );
+		}
+
+		.icon {
+			margin: 0px 5px 0px 5px;
+			width: 16px;
+			height: 16px;
+
+			color: @accent-color-3;
+			text-align: center;
+			font-size: 16px !important;
+			line-height: 1;
+
+			&:hover {
+				.transition(color .5s ease 0s);
+				color: @accent-color-1;
+			}
+		}
+	}
+
+	.description {
+		display: none;
+	}
+
+	.team-member-bio{
+	margin-top: 5px;
+	border: none;
+	padding-top: 0px;
+	}
+}

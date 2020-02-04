@@ -1,0 +1,143 @@
+<?php
+return array(
+	'name'    => __( 'Buttons', 'auto-repair' ) ,
+	'value'   => 'button',
+	'options' => array(
+		array(
+			'name'    => __( 'Text', 'auto-repair' ) ,
+			'id'      => 'text',
+			'default' => '',
+			'type'    => 'text',
+		) ,
+		array(
+			'name'    => __( 'Style', 'auto-repair' ) ,
+			'id'      => 'style',
+			'default' => 'filled-small',
+			'type'    => 'select',
+			'options' => array(
+				'filled'         => __( 'Filled', 'auto-repair' ),
+				'filled-small'   => __( 'Filled, small', 'auto-repair' ),
+				'border'         => __( 'Border', 'auto-repair' ),
+				'border-3px' => __( 'Border Slanted', 'auto-repair' ),
+			),
+		) ,
+		array(
+			'name'    => __( 'Font size', 'auto-repair' ) ,
+			'id'      => 'font',
+			'default' => 24,
+			'type'    => 'range',
+			'min'     => 10,
+			'max'     => 64,
+		) ,
+		array(
+			'name'    => __( 'Background', 'auto-repair' ) ,
+			'id'      => 'bgColor',
+			'default' => 'accent1',
+			'type'    => 'select',
+			'options' => array(
+				'accent1' => __( 'Accent 1', 'auto-repair' ),
+				'accent2' => __( 'Accent 2', 'auto-repair' ),
+				'accent3' => __( 'Accent 3', 'auto-repair' ),
+				'accent4' => __( 'Accent 4', 'auto-repair' ),
+				'accent5' => __( 'Accent 5', 'auto-repair' ),
+				'accent6' => __( 'Accent 6', 'auto-repair' ),
+				'accent7' => __( 'Accent 7', 'auto-repair' ),
+				'accent8' => __( 'Accent 8', 'auto-repair' ),
+			),
+		) ,
+		array(
+			'name'    => __( 'Hover Background', 'auto-repair' ) ,
+			'id'      => 'hover_color',
+			'default' => 'accent1',
+			'type'    => 'select',
+			'options' => array(
+				'accent1' => __( 'Accent 1', 'auto-repair' ),
+				'accent2' => __( 'Accent 2', 'auto-repair' ),
+				'accent3' => __( 'Accent 3', 'auto-repair' ),
+				'accent4' => __( 'Accent 4', 'auto-repair' ),
+				'accent5' => __( 'Accent 5', 'auto-repair' ),
+				'accent6' => __( 'Accent 6', 'auto-repair' ),
+				'accent7' => __( 'Accent 7', 'auto-repair' ),
+				'accent8' => __( 'Accent 8', 'auto-repair' ),
+			),
+		) ,
+		array(
+			'name'    => __( 'Alignment', 'auto-repair' ) ,
+			'id'      => 'align',
+			'default' => '',
+			'prompt'  => '',
+			'type'    => 'select',
+			'options' => array(
+				'left'   => __( 'Left', 'auto-repair' ) ,
+				'right'  => __( 'Right', 'auto-repair' ) ,
+				'center' => __( 'Center', 'auto-repair' ) ,
+			) ,
+		) ,
+		array(
+			'name'    => __( 'Link', 'auto-repair' ) ,
+			'id'      => 'link',
+			'default' => '',
+			'type'    => 'text',
+		) ,
+		array(
+			'name'    => __( 'Link Target', 'auto-repair' ) ,
+			'id'      => 'linkTarget',
+			'default' => '_self',
+			'type'    => 'select',
+			'options' => array(
+				'_blank' => __( 'Load in a new window', 'auto-repair' ) ,
+				'_self'  => __( 'Load in the same frame as it was clicked', 'auto-repair' ) ,
+			) ,
+		) ,
+		array(
+			'name'    => __( 'Icon', 'auto-repair' ) ,
+			'id'      => 'icon',
+			'default' => '',
+			'type'    => 'icons',
+		) ,
+		array(
+			'name'    => __( 'Icon Style', 'auto-repair' ),
+			'type'    => 'select-row',
+			'selects' => array(
+				'icon_color' => array(
+					'desc'    => __( 'Color:', 'auto-repair' ),
+					"default" => "",
+					"prompt"  => '',
+					"options" => array(
+						'accent1' => __( 'Accent 1', 'auto-repair' ),
+						'accent2' => __( 'Accent 2', 'auto-repair' ),
+						'accent3' => __( 'Accent 3', 'auto-repair' ),
+						'accent4' => __( 'Accent 4', 'auto-repair' ),
+						'accent5' => __( 'Accent 5', 'auto-repair' ),
+						'accent6' => __( 'Accent 6', 'auto-repair' ),
+						'accent7' => __( 'Accent 7', 'auto-repair' ),
+						'accent8' => __( 'Accent 8', 'auto-repair' ),
+					) ,
+				),
+				'icon_placement' => array(
+					'desc'    => __( 'Placement:', 'auto-repair' ),
+					"default" => 'left',
+					"options" => array(
+						'left'  => __( 'Left', 'auto-repair' ),
+						'right' => __( 'Right', 'auto-repair' ),
+					) ,
+				),
+			),
+		),
+
+		array(
+			'name'    => __( 'ID', 'auto-repair' ) ,
+			'desc'    => __( 'ID attribute added to the button element.', 'auto-repair' ),
+			'id'      => 'id',
+			'default' => '',
+			'type'    => 'text',
+		) ,
+		array(
+			'name'    => __( 'Class', 'auto-repair' ) ,
+			'desc'    => __( 'Class attribute added to the button element.', 'auto-repair' ),
+			'id'      => 'class',
+			'default' => '',
+			'type'    => 'text',
+		) ,
+	) ,
+);

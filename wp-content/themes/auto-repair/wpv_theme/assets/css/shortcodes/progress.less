@@ -1,0 +1,41 @@
+.wpv-progress {
+	@size: 130px;
+
+	position: relative;
+	text-align: center;
+	width: @size;
+	height: auto;
+	line-height: normal;
+	font-weight: 300;
+	font-size: 1.2em;
+	margin: auto;
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
+
+	canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	span:first-child {
+		.wpv-font(h3-);
+		color: @accent-color-6;
+	}
+
+	&.number {
+		width: auto;
+
+		span:first-child {
+			.wpv-font(h3-);
+			color: @accent-color-6;
+		}
+	}
+
+	&.pie {
+		span {
+			font-size: 2em;
+			line-height: @size;
+		}
+	}
+}

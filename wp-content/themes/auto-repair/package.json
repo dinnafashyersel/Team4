@@ -1,0 +1,40 @@
+{
+  "name": "auto-repair",
+  "version": "1.0.0",
+  "description": "Please find our support system and documentation here:",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "~1.1.0",
+    "grunt-contrib-compress": "^1.4.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-parallel": "^0.5.1",
+    "grunt-phpcs": "^0.4.0",
+    "grunt-phpdocumentor": "^0.4.1",
+    "grunt-recess": "^1.0.1",
+    "grunt-replace": "^1.0.1",
+    "grunt-ucss": "^0.1.4",
+    "grunt-wp-i18n": "^1.0.0",
+    "matchdep": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/veniko/auto-repair.git"
+  },
+  "author": "Vamtam",
+  "license": "dual GPL/Envato",
+  "readmeFilename": "readme.txt",
+  "jsLocation": "vamtam/assets/js/",
+  "adminJsLocation": "vamtam/admin/assets/js/",
+  "cssLocation": "wpv_theme/assets/css/",
+  "plessc": "utils/plessc",
+  "gitHead": "1a7a729b760381ff207c78a9888afbeb89937e5d",
+  "vamtamApi": "20190506"
+}

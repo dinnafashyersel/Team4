@@ -1,0 +1,125 @@
+blockquote {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	margin: 30px 0;
+	padding-left: 20px;
+	border-left: 1px solid @accent-color-4;
+	text-align: left;
+	font-size: 1.2em;
+	font-weight: 300;
+
+	p, & {
+		.wpv-font(h3-);
+		font-size: 1.2em;
+		font-weight: 300;
+	}
+
+	&.small {
+		p, & {
+			.wpv-font(primary-font-);
+			margin-bottom: 0;
+		}
+	}
+
+	&.simple {
+		overflow: auto;
+		margin: 0;
+		padding: 20px 0 10px 0;
+		padding-left: 0;
+		border-left: 0;
+		text-align: left;
+
+		.quote-thumbnail {
+			height: 40px;
+			float: left;
+			margin-left: 10px;
+
+			img {
+				display: inline-block;
+				border-radius: 100%;
+				margin: 0px;
+				max-height: 100%;
+				width: auto;
+			}
+		}
+
+		.quote-title-wrapper {
+			margin: 10px 0;
+		}
+
+		.quote-title {
+			border: solid 1px @accent-color-7;
+			padding: 8px 20px;
+			border-radius: 40px;
+			width: auto;
+			color: @accent-color-4;
+			font-weight: normal;
+			float: left;
+
+			&, a {
+				color: @accent-color-1;
+			}
+
+			.the-title:not(:last-child) {
+				padding-right: 3px;
+			}
+
+			.icon {
+				font-size: 16px;
+				vertical-align: middle;
+				padding-bottom: 2px;
+			}
+		}
+
+		.quote-text {
+			.wpv-font(primary-font-);
+			overflow: hidden;
+			font-weight: normal;
+
+			img {
+				width: auto; // cube conflict
+			}
+		}
+	}
+
+	cite {
+		display: block;
+		margin: 10px 0 0 0;
+
+		&, a {
+			.wpv-font(h5-);
+			color: @css_link_color;
+		}
+
+		a {
+			vertical-align: middle;
+		}
+
+		&:before {
+			display: inline-block;
+			margin-right: 10px;
+			width: 30px;
+			height: 0;
+			border-bottom: 1px solid @default-line-color;
+			content: "";
+			vertical-align: middle;
+		}
+	}
+
+	&:last-child {
+		cite:empty {
+			display: none;
+		}
+	}
+
+	.slide-wrapper & {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	p {
+		&:first-child { margin-top: 0; }
+		&:last-child { margin-bottom: 0; }
+	}
+}

@@ -1,0 +1,29 @@
+.highlight {
+	padding: 0 5px;
+	color: #000;
+	vertical-align: baseline;
+	line-height: 125%;
+	margin-right: 5px;
+	display: inline-block;
+	position: relative;
+
+	&.light {
+		&, &:before {
+			background: mix( @accent-color-2, #fff, 40% );
+		}
+	}
+
+	&.dark {
+		color: #eee;
+
+		&, &:before {
+			background: mix( @accent-color-1, #000, 60% );
+		}
+	}
+
+
+	.highlight-content {
+		position: relative;
+		z-index: 1;
+	}
+}

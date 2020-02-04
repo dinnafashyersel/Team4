@@ -1,0 +1,61 @@
+.dropcap1,
+.dropcap2 {
+	float: left;
+	font-weight: 400 !important;
+	overflow: visible;
+	text-align: center;
+	vertical-align: middle;
+	font-family: @h1-face;
+	color: @accent-color-1;
+}
+
+.dropcap1 {
+	font-size: 30px !important;
+	height: 30px;
+	line-height: 1em;
+	padding: 7px 8px;
+	border: 2px solid @accent-color-3;
+	width: auto;
+	min-width: 1em;
+	color: @accent-color-3;
+	margin: -0.04em 15px -0.07em 0;
+}
+
+.dropcap2 {
+	border: 0 none !important;
+	font-size: @primary-font-lheight * 2.2 !important;
+	height: @primary-font-lheight * 2;
+	line-height: 1em;
+	margin: -0.05em 15px 0 -0.1em;
+	padding: 0;
+	width: 2ex;
+
+	&.accent1 { color: @accent-color-1; }
+	&.accent2 { color: @accent-color-2; }
+	&.accent3 { color: @accent-color-3; }
+	&.accent4 { color: @accent-color-4; }
+	&.accent5 { color: @accent-color-5; }
+	&.accent6 { color: @accent-color-6; }
+}
+
+.dropcap-text {
+	display: table-cell;
+	vertical-align: middle;
+	.wpv-font(h3-);
+	color: @h3-color;
+}
+
+.dropcap-wrapper {
+	display: table;
+
+	.dropcap1,
+	.dropcap2 {
+		float: none;
+		display: block;
+	}
+
+	.dropcap-left {
+		display: table-cell;
+		vertical-align: top;
+	}
+}
